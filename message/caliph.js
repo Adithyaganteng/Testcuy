@@ -243,7 +243,10 @@ menu = `
 ┃ ⬡ ${prefix}attp2
 ┃ ⬡ ${prefix}attp3
 ┗━━「 ${caliph.user.name.toUpperCase()} 」━━
-
+but = [
+          { buttonId: `${prefix}infobot`, buttonText: { displayText: '☰ INFO' }, type: 1 },
+          { buttonId: `${prefix}owner`, buttonText: { displayText: '☰ OWNER' }, type: 1 }
+        ]
 `.trim()
 var img = fs.readFileSync(global.thumb)
 caliph.sendMessage(m.chat, img, mType.image, { quoted: freply('Rikka-Botz WhatsApp', img), caption: menu })
